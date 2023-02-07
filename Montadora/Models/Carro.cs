@@ -82,7 +82,8 @@ namespace Models
                 PneuTraseiroDireito.Girar(_impulso);
                 PneuTraseiroEsquerdo.Girar(_impulso);
 
-                if (PneuDianteiroDireito.Estourado || PneuDianteiroEsquerdo.Estourado || PneuTraseiroDireito.Estourado || PneuTraseiroEsquerdo.Estourado)
+                if (PneuDianteiroDireito.Estourado || PneuDianteiroEsquerdo.Estourado || PneuTraseiroDireito.Estourado 
+                    || PneuTraseiroEsquerdo.Estourado)
                 {
                     Parar();
                 }
@@ -117,7 +118,8 @@ namespace Models
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="_quantidadeCombustivel">Informe o percentual de combustível que deseja abastercer, caso informe 0 o método irá completar o tanque. O valor não pode ser superior a 100.</param>
+        /// <param name="_quantidadeCombustivel">Informe o percentual de combustível que deseja abastercer, caso informe 0 o método irá 
+        /// completar o tanque. O valor não pode ser superior a 100.</param>
         public void Abastecer(int _quantidadeCombustivel = 0)
         {
             if (_quantidadeCombustivel == 0)
