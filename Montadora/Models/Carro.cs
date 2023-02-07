@@ -46,7 +46,7 @@ namespace Models
             if (PercentualCombustivel > 0)
             {
                 Ligado = true;
-                PercentualCombustivel = PercentualCombustivel - 3;
+                PercentualCombustivel -= 3;
 
                 if (PercentualCombustivel <= 0)
                 {
@@ -68,7 +68,7 @@ namespace Models
             {
                 Odometro += 18;
 
-                PercentualCombustivel = PercentualCombustivel - 8;
+                PercentualCombustivel -- 8;
                 if (PercentualCombustivel <= 0)
                 {
                     PercentualCombustivel = 0;
